@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #000; /* Black header background */
+    background-color: #464545; /* Black header background */
     color: #fff;
     position: sticky;
     top: 0;
@@ -53,21 +53,23 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff0000; /* Red color on hover */
+    color: #000000; /* Red color on hover */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('/Images/hero-img.png') no-repeat center center/cover; /* Background image */
+    background: url('/Images/background.jpg') no-repeat center center/cover;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #020101;
     text-align: center;
     padding: 0 20px;
+  
 }
+
 
 .hero h1 {
     font-size: 3rem;
@@ -76,7 +78,7 @@ header nav ul li a:hover {
 }
 
 .hero h1 span {
-    color: #ff0000; /* Red highlight */
+    color: #cf6868; /* Red highlight */
 }
 
 .hero p {
@@ -88,8 +90,8 @@ header nav ul li a:hover {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #ff0000;
-    color: #fff;
+    background-color: #977a83;
+    color: #000000;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
@@ -97,7 +99,7 @@ header nav ul li a:hover {
 }
 
 .hero .cta:hover {
-    background-color: #e60000; /* Darker red on hover */
+    background-color: #7a5555; /* Darker red on hover */
 }
 
 /* About Us Section */
@@ -123,41 +125,31 @@ header nav ul li a:hover {
 }
 
 /* Services Section */
-.services {
-    background: #f9f9f9;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-}
-
-.services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 20px; /* Add space between items */
+    align-items: center; /* Center align the service cards */
 }
 
 .service-card {
-    background: #fff;
+    width: 80%; /* Set a reasonable width for the cards */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the card horizontally */
+    background: #fff; /* White background for better contrast */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
-    max-width: 100%;
+    max-width: 100%; /* Ensure images fit within the card */
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -174,43 +166,18 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Projects Section */
-.projects {
-    background: #fff;
-    padding: 50px 20px;
-    margin: 0 auto; /* Center the section */
-    max-width: 1200px; /* Limit the maximum width */
-    text-align: center;
-}
-
-.projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.projects p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
 .project-gallery img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /* Ensures images adapt to their container's width */
+    max-width: 300px; /* Set a maximum width for all images */
+    height: 200px; /* Set a fixed height to maintain uniformity */
+    object-fit: cover; /* Ensures images fit the dimensions without distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners for better aesthetics */
+    margin: 0 auto; /* Centers the images */
 }
 
 /* Why Choose Us Section */
 .choose-us {
-    background: #f9f9f9;
-    padding: 50px 20px;
-    margin: 0 auto; /* Center the section */
-    max-width: 1200px; /* Limit the maximum width */
+    background: url("/Images/background gradient.jpg")
 }
 
 .choose-us h2 {
@@ -223,7 +190,7 @@ header nav ul li a:hover {
     font-size: 1.1rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #555;
+    color: #000000;
 }
 
 .choose-us-grid {
@@ -233,28 +200,29 @@ header nav ul li a:hover {
 }
 
 .choose-us-box {
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #a81616;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .choose-us-box:hover {
+    background-color: #d9e6e9;
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.1);
 }
 
 .choose-us-box h3 {
     font-size: 2rem;
-    color: #ff0000;
+    color: #493e19;
     margin-bottom: 10px;
 }
 
 .choose-us-box p {
     font-size: 1rem;
-    color: #555;
+    color: #000000;
 }
 
 /* Contact Section */
@@ -295,8 +263,8 @@ header nav ul li a:hover {
 
 .contact form button {
     padding: 15px;
-    background-color: #ff0000;
-    color: #fff;
+    background-color: #9e7d7d;
+    color: #0f0d0d;
     font-size: 1rem;
     border: none;
     border-radius: 25px;
@@ -305,7 +273,7 @@ header nav ul li a:hover {
 }
 
 .contact form button:hover {
-    background-color: #e60000;
+    background-color: #746f6f;
 }
 
 .contact-details p {
