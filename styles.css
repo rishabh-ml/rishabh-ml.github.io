@@ -1,108 +1,109 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  a:hover {
-    color: #dadada;
-  }
-  
-  h1, h2, h3 {
-    color: #0056b3;
-  }
-  
-  p {
-    margin-bottom: 1rem;
-  }
-  
-  /* Header Styles */
-  header {
-    background: #007BFF;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header .logo img {
-    height: 50px;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  header nav ul li a {
-    color: rgb(147, 189, 228);
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  header nav ul li a.active, 
-  header nav ul li a:hover {
-    background: #d9dde0;
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    text-align: center;
-    padding: 100px 20px;
-    color: rgb(255, 255, 255);
-  }
-  
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    color: #007BFF;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hero .btn:hover {
-    background-color: #0056b3;
-    color: white;
-  }
-  /* About Us Section */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #dadada;
+}
+
+h1, h2, h3 {
+  color: #0056b3;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Header Styles */
+header {
+  background: #007BFF;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: rgb(147, 189, 228);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header nav ul li a.active, 
+header nav ul li a:hover {
+  background: #d9dde0;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007BFF;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* About Us Section */
 .about-us {
   padding: 50px 20px;
-  background-color: #ffffff; /* Light background for contrast */
+  background-color: #ffffff;
   text-align: center;
 }
 
 .about-us h2 {
   font-size: 2.5rem;
-  color: #0056b3; /* Matching theme color */
+  color: #0056b3;
   margin-bottom: 20px;
 }
 
@@ -128,7 +129,8 @@
 .about-us .btn:hover {
   background-color: #0056b3;
 }
-/* Centering Explore Services Button Below About Us Section */
+
+/* Explore Services Button */
 .explore-services {
   margin-top: 20px;
   text-align: center;
@@ -150,7 +152,7 @@
   background-color: #0056b3;
 }
 
- /* Services Overview Section */
+/* Services Overview Section */
 .services-overview {
   padding: 50px 20px;
   background-color: #f8f9fa;
@@ -165,35 +167,34 @@
 /* Service Grid Layout */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  justify-items: center; /* Center cards within grid */
+  justify-items: center;
 }
 
 /* Service Card */
 .service-item {
-  background: #fff; /* White background for contrast */
+  background: #fff;
   padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow */
-  width: 100%; /* Fit within grid cell */
-  max-width: 300px; /* Limit card width */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
 }
 
-/* Hover Effect: Pop-Up Animation */
 .service-item:hover {
-  transform: scale(1.0) translateY(-10px); /* Scale up and lift slightly */
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Service Card Image */
 .service-item img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Maintain image aspect ratio */
-  border-radius: 8px; /* Match card corners */
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
@@ -223,309 +224,121 @@
 }
 
 .service-item .btn:hover {
-  background: #0056b3; /* Darker blue on hover */
+  background: #0056b3;
 }
 
-
-  /* Why Choose Us Section */
-  .why-choose-us {
-    background: #e9ecef;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .why-choose-us h2 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-  }
-  
-  .reasons-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .reason {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .reason:hover {
-    transform: translateY(-10px);
-  }
-  
-  .reason h3 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-  }
-  
-  .reason p {
-    color: #666;
-  }
-  
-  /* Footer */
-  footer {
-    background: #333;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: left;
-  }
-  
-  .footer-container img {
-    height: 50px;
-  }
-  
-  .footer-container h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links ul li a {
-    color: white;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    display: inline-block;
-  }
-  
-  .footer-contact .social-icons a {
-    margin-right: 10px;
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .footer-contact .social-icons a:hover {
-    color: #007BFF;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .service-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .reasons-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  /* Additional CSS for AC Work Service Page */
-
-/* Page Banner */
-.page-banner {
-  background-size: cover;
-  background-position: center;
-  padding: 100px 20px;
-  color: white;
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #e9ecef;
+  padding: 50px 20px;
   text-align: center;
 }
 
-.page-banner .banner-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.page-banner .banner-content p {
-  font-size: 1.5rem;
-}
-
-/* Service Details Section */
-.service-details {
-  padding: 50px 20px;
-  background-color: #ffffff;
-}
-
-.service-details .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.service-details h2 {
+.why-choose-us h2 {
+  margin-bottom: 20px;
   font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
-.service-details h3 {
-  font-size: 2rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.service-details p {
-  margin-bottom: 15px;
-  color: #333;
+.reason {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.service-details ul, .service-details ol {
-  margin-left: 20px;
-  margin-bottom: 20px;
+.reason:hover {
+  transform: translateY(-10px);
 }
 
-.service-details li {
+.reason h3 {
   margin-bottom: 10px;
+  font-size: 1.8rem;
 }
 
-.service-details li::marker {
-  color: #007BFF;
+.reason p {
+  color: #666;
 }
 
-.service-details a.btn {
-  display: inline-block;
-  margin-top: 20px;
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
 }
 
-/* Container Class (if not already defined) */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* Additional CSS for Plumbing Work Service Page */
-
-/* Service List */
-.service-list {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
-  margin-bottom: 30px;
+  text-align: left;
 }
 
-.service-list ul {
-  flex: 1 1 200px;
+.footer-container img {
+  height: 50px;
+}
+
+.footer-container h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-.service-list ul li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.service-list ul li::before {
-  content: "\f058"; /* Font Awesome check-circle icon */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  color: #007BFF;
-}
-
-/* Additional CSS for False Ceiling Work Service Page */
-
-/* Industries List */
-.industries-list {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  list-style: none;
-  padding: 0;
-}
-
-.industries-list li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 20px;
-}
-
-.industries-list li::before {
-  content: "\f058"; /* Font Awesome check-circle icon */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  color: #007BFF;
-}
-
-/* Page Banner */
-.page-banner {
-  background-size: cover;
-  background-position: center;
-  padding: 100px 20px;
+.footer-links ul li a {
   color: white;
-  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
-.page-banner .banner-content h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.footer-contact .social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
 }
 
-.page-banner .banner-content p {
-  font-size: 1.5rem;
-}
-
-/* Service Details Section */
-.service-details {
-  padding: 50px 20px;
-  background-color: #ffffff;
-}
-
-.service-details h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.service-details h3 {
-  font-size: 2rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.service-details p {
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.service-details ul, .service-details ol {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.service-details li {
-  margin-bottom: 10px;
-}
-
-.service-details li::marker {
+.footer-contact .social-icons a:hover {
   color: #007BFF;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .industries-list {
-      columns: 1;
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .service-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .reasons-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
   }
 }
 
-/* Additional CSS for Partition Work Service Page */
+/* Service Pages Common Styles */
 
 /* Page Banner */
 .page-banner {
@@ -597,8 +410,67 @@
   margin-top: 20px;
 }
 
-/* Responsive Design */
+/* Specific Styles for Service Pages */
+
+/* Service List (Plumbing Work) */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.service-list ul {
+  flex: 1 1 200px;
+  list-style: none;
+  padding: 0;
+}
+
+.service-list ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-list ul li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
+/* Industries List (False Ceiling Work) */
+.industries-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none;
+  padding: 0;
+}
+
+.industries-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.industries-list li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
+/* Responsive Adjustments for Service Pages */
 @media (max-width: 768px) {
+  .industries-list {
+      columns: 1;
+  }
+
   .service-details {
       padding: 30px 15px;
   }
@@ -611,4 +483,3 @@
       font-size: 1.2rem;
   }
 }
-
