@@ -468,3 +468,90 @@
   }
 }
 
+/* Additional CSS for Partition Work Service Page */
+
+/* Page Banner */
+.page-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+.page-banner .banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.page-banner .banner-content p {
+  font-size: 1.5rem;
+}
+
+/* Service Details Section */
+.service-details {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.service-details .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-details h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.service-details p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-details ul, .service-details ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.service-details li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-details li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
+.service-details a.btn {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-details {
+      padding: 30px 15px;
+  }
+
+  .page-banner .banner-content h1 {
+      font-size: 2.5rem;
+  }
+
+  .page-banner .banner-content p {
+      font-size: 1.2rem;
+  }
+}
+
