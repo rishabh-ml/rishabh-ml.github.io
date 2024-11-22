@@ -350,3 +350,34 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+/* Additional CSS for Plumbing Work Service Page */
+
+/* Service List */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.service-list ul {
+  flex: 1 1 200px;
+  list-style: none;
+  padding: 0;
+}
+
+.service-list ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-list ul li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
