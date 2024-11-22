@@ -19,7 +19,7 @@
   }
   
   a:hover {
-    color: #0056b3;
+    color: #dadada;
   }
   
   h1, h2, h3 {
@@ -50,7 +50,7 @@
   }
   
   header nav ul li a {
-    color: white;
+    color: rgb(147, 189, 228);
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
@@ -58,7 +58,7 @@
   
   header nav ul li a.active, 
   header nav ul li a:hover {
-    background: #0056b3;
+    background: #d9dde0;
   }
   
   /* Hero Section */
@@ -66,7 +66,7 @@
     background: url('hero.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   
   .hero h1 {
@@ -93,6 +93,63 @@
     background-color: #0056b3;
     color: white;
   }
+  /* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  background-color: #ffffff; /* Light background for contrast */
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  color: #0056b3; /* Matching theme color */
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-us .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-us .btn:hover {
+  background-color: #0056b3;
+}
+/* Centering Explore Services Button Below About Us Section */
+.explore-services {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.explore-services .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.explore-services .btn:hover {
+  background-color: #0056b3;
+}
+
  /* Services Overview Section */
 .services-overview {
   padding: 50px 20px;
