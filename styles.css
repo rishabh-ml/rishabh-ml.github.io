@@ -539,3 +539,151 @@ footer p {
       font-size: 1.2rem;
   }
 }
+
+/* About Us Details Section */
+.about-us-details {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.about-us-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us-details h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-us-details p {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-us-details .about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-us-details .about-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about-us-details .about-list li::before {
+  content: "\f0da"; /* Font Awesome angle-right icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #007BFF;
+}
+
+/* Services Intro Section */
+.services-intro {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.services-intro h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.services-intro p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Contact Details Section */
+.contact-details {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.contact-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-details .contact-form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.contact-details .contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-details .contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-details .contact-form label span {
+  color: red;
+}
+
+.contact-details .contact-form input,
+.contact-details .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-details .contact-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-details .contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-details .contact-info {
+  margin-top: 30px;
+}
+
+.contact-details .contact-info h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-details .contact-info p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about-us-details h2,
+  .services-intro h2,
+  .contact-details h2 {
+      font-size: 2rem;
+  }
+
+  .about-us-details h3,
+  .contact-details .contact-info h3 {
+      font-size: 1.5rem;
+  }
+}
