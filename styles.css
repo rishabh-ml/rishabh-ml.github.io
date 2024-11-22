@@ -105,56 +105,56 @@
   font-size: 2.5rem;
 }
 
-/* Service Grid */
+/* Service Grid Layout */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
   gap: 20px;
-  justify-items: center;
+  justify-items: center; /* Center cards within grid */
 }
 
-/* Service Item */
+/* Service Card */
 .service-item {
-  background: #fff; /* White background for better contrast */
+  background: #fff; /* White background for contrast */
   padding: 20px;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow */
-  transition: transform 0.3s, box-shadow 0.3s ease-in-out; /* Smooth animation */
-  width: 100%; /* Ensure card width fits grid */
-  max-width: 300px; /* Limit maximum card width */
-  text-align: center; /* Center align content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow */
+  width: 100%; /* Fit within grid cell */
+  max-width: 300px; /* Limit card width */
+  text-align: center;
 }
 
-/* Hover Effect for Pop-Up Animation */
+/* Hover Effect: Pop-Up Animation */
 .service-item:hover {
-  transform: scale(1.1); /* Slight zoom effect */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.0) translateY(-10px); /* Scale up and lift slightly */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
-/* Image in Service Item */
+/* Service Card Image */
 .service-item img {
   width: 100%;
   height: 200px;
-  object-fit: cover; /* Ensure images maintain aspect ratio */
-  border-radius: 8px; /* Match the card's border radius */
+  object-fit: cover; /* Maintain image aspect ratio */
+  border-radius: 8px; /* Match card corners */
   margin-bottom: 10px;
 }
 
-/* Service Item Title */
+/* Service Card Title */
 .service-item h3 {
   font-size: 1.5rem;
   color: #0056b3;
   margin-bottom: 10px;
 }
 
-/* Service Item Description */
+/* Service Card Description */
 .service-item p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 15px;
 }
 
-/* Button */
+/* Service Card Button */
 .service-item .btn {
   display: inline-block;
   padding: 8px 15px;
@@ -162,12 +162,13 @@
   color: white;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 .service-item .btn:hover {
   background: #0056b3; /* Darker blue on hover */
 }
+
 
   /* Why Choose Us Section */
   .why-choose-us {
