@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Page Needs -->
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <title>Office Partitioning Services | Syed Rizvi Technical Services L.L.C</title>
     <meta name="description" content="Professional office partitioning solutions in Dubai by Syed Rizvi Technical Services L.L.C. Transform your workspace with flexible and cost-effective partitions.">
@@ -13,21 +13,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Professional Office Partitioning Services in Dubai">
     <meta property="og:description" content="Transform your workspace with our comprehensive range of office partitioning systems.">
-    <meta property="og:image" content="partition-work-banner.jpg">
-    <meta property="og:url" content="https://srtechnical.com/partition-work.html">
+    <meta property="og:image" content="partition-banner.jpg">
+    <meta property="og:url" content="https://srtechnical.com/partition.html">
     <meta property="og:type" content="website">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Office Partitioning Services | Syed Rizvi Technical Services L.L.C">
     <meta name="twitter:description" content="Professional office partitioning solutions in Dubai. Transform your workspace with flexible and cost-effective partitions.">
-    <meta name="twitter:image" content="partition-work-banner.jpg">
+    <meta name="twitter:image" content="partition-banner.jpg">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- AOS Animation CSS -->
@@ -41,17 +43,21 @@
             <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo" title="Syed Rizvi Technical Services L.L.C">
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image: url('partition-work-banner.jpg');" data-aos="fade-down">
+    <section class="page-banner" style="background-image: url('partition-banner.jpg');" data-aos="fade-down">
         <div class="banner-content">
             <h1>Professional Office Partitioning Services</h1>
             <p>Transforming Workspaces with Flexible Solutions</p>
@@ -96,15 +102,6 @@
                     <li><strong>Quick Installation:</strong> Our professional team ensures minimal disruption to your operations.</li>
                 </ul>
 
-                <h3>Our Process</h3>
-                <ol>
-                    <li><strong>Consultation:</strong> We discuss your requirements and assess your space to recommend the best partitioning solutions.</li>
-                    <li><strong>Design and Planning:</strong> Our team creates detailed plans and designs tailored to your preferences.</li>
-                    <li><strong>Material Selection:</strong> Choose from a wide range of high-quality materials and finishes.</li>
-                    <li><strong>Installation:</strong> Our skilled installers execute the project efficiently and safely.</li>
-                    <li><strong>Completion and Review:</strong> We ensure you're completely satisfied with the final result.</li>
-                </ol>
-
                 <h3>Contact Us for a No-Obligation Quotation</h3>
                 <p>
                     The possibilities with office partitions are endless! Contact us today with details of your requirements, and we would be more than happy to provide a no-obligation quotation. At <strong>Syed Rizvi Technical Services L.L.C</strong>, we're committed to transforming your workspace into a functional and aesthetically pleasing environment.
@@ -118,7 +115,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-about">
-                <img src="logo-footer.png" alt="Syed Rizvi Technical Services Logo">
+                <img src="logo-footer.png" alt="Syed Rizvi Logo Footer">
                 <p>Syed Rizvi Technical Services L.L.C - Your trusted partner for building maintenance and technical services across the UAE.</p>
             </div>
             <div class="footer-links">
@@ -127,6 +124,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -145,11 +143,49 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- AOS Animation Script -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="animations.js"></script>
+
+    <!-- Responsive Navigation Script -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Lazy Loading Images Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('img[data-src]');
+            const loadImage = function(image) {
+                image.setAttribute('src', image.getAttribute('data-src'));
+                image.onload = function() {
+                    image.removeAttribute('data-src');
+                };
+            };
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            loadImage(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                images.forEach(function(image) {
+                    observer.observe(image);
+                });
+            } else {
+                images.forEach(function(image) {
+                    loadImage(image);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
