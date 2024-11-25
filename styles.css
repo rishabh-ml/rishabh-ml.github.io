@@ -751,3 +751,226 @@ footer p {
     font-size: 1.5rem;
   }
 }
+
+/* Projects Intro Section */
+.projects-intro {
+  padding: 50px 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.projects-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.projects-intro p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Projects Overview Section */
+.projects-overview {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.projects-overview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-item {
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+/* Types of Work Section */
+.types-of-work {
+  padding: 50px 20px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.types-of-work h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.work-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.work-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.work-list li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #87CEEB; /* Sky Blue icon */
+}
+
+/* Clients Section */
+.clients {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.clients h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.client-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.client-list li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.clients p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 50px 20px;
+  background-color: #87CEEB; /* Sky Blue background */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.cta-section .btn {
+  background-color: #FFFFFF;
+  color: #87CEEB;
+}
+
+.cta-section .btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Additional Styles for Service Details Lists */
+.service-details ul,
+.types-of-work ul,
+.clients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-details ul li,
+.types-of-work ul li,
+.clients ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.service-details ul li::before,
+.types-of-work ul li::before {
+  content: "\f058"; /* Font Awesome check-circle icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #87CEEB;
+}
+
+.clients ul li::before {
+  content: "\f0c8"; /* Font Awesome square icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #87CEEB;
+}
+
+/* Adjustments for Responsive Design */
+@media (max-width: 768px) {
+  .project-grid,
+  .work-list,
+  .client-list {
+    grid-template-columns: 1fr;
+  }
+
+  .client-list li {
+    display: block;
+    margin: 10px 0;
+  }
+}
