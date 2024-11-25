@@ -28,30 +28,43 @@
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- AOS Animation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin (for smooth scrolling) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></div>
+
     <!-- Header -->
     <header>
         <div class="logo">
             <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo" title="Syed Rizvi Technical Services L.L.C">
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image: url('false-ceiling.jpg');" data-aos="fade-down">
+    <section class="page-banner" style="background-image: url('false-ceiling.jpg');">
         <div class="banner-content">
             <h1>Professional False Ceiling Services</h1>
             <p>Transforming Spaces with Innovative Ceiling Solutions</p>
@@ -60,7 +73,7 @@
 
     <!-- Main Content -->
     <main>
-        <section class="service-details" data-aos="fade-up">
+        <section class="service-details">
             <div class="container">
                 <h2>Expert False Ceiling Installations in Dubai</h2>
                 <p>
@@ -71,7 +84,7 @@
                 </p>
 
                 <h3>Why Choose Our False Ceiling Services?</h3>
-                <ul>
+                <ul class="about-list">
                     <li><strong>Extensive Experience:</strong> With over 10 years in the industry, we have built an enviable reputation for delivering exceptional ceiling solutions.</li>
                     <li><strong>Quality Materials:</strong> We use only the best ceiling products from the world's leading suppliers to ensure durability and aesthetic appeal.</li>
                     <li><strong>Customized Solutions:</strong> Our team works closely with you to design ceilings that meet your specific needs and enhance your space.</li>
@@ -80,7 +93,7 @@
 
                 <h3>Benefits of False Ceilings</h3>
                 <p>The range of ceilings and ceiling tiles available on the market today can meet the demands of all areas of work, offering:</p>
-                <ul>
+                <ul class="about-list">
                     <li><strong>Improved Light Reflectance:</strong> Enhance natural and artificial lighting in your space.</li>
                     <li><strong>Better Acoustics:</strong> Reduce noise levels for a more comfortable environment.</li>
                     <li><strong>Thermal Insulation:</strong> Improve energy efficiency and reduce utility costs.</li>
@@ -129,7 +142,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -148,11 +162,38 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Lazy Loading Images Script -->
     <script>
-        AOS.init();
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll('img[data-src]');
+            const loadImage = function (image) {
+                image.setAttribute('src', image.getAttribute('data-src'));
+                image.onload = function () {
+                    image.removeAttribute('data-src');
+                };
+            };
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            loadImage(entry.target);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                });
+                images.forEach(function (image) {
+                    observer.observe(image);
+                });
+            } else {
+                images.forEach(function (image) {
+                    loadImage(image);
+                });
+            }
+        });
     </script>
-    <script src="animations.js"></script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>

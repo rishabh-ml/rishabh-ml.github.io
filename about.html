@@ -32,11 +32,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- AOS Animation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin (for smooth scrolling) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></div>
+
     <!-- Header -->
     <header>
         <div class="logo">
@@ -57,7 +64,7 @@
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image: url('about-banner.jpg');" data-aos="fade-down">
+    <section class="page-banner" style="background-image: url('about-banner.jpg');">
         <div class="banner-content">
             <h1>About Us</h1>
             <p>Your Trusted Partner for Building Maintenance and Technical Services</p>
@@ -66,7 +73,7 @@
 
     <!-- Main Content -->
     <main>
-        <section class="about-us-details" data-aos="fade-up">
+        <section class="about-us-details">
             <div class="container">
                 <h2>Who We Are</h2>
                 <p>
@@ -112,7 +119,7 @@
                 <p>
                     We work to establish strong long-term relationships with our valued clients, while continuously offering them the highest level of service. Our reputation for quality and standards has attracted a number of clients across the UAE.
                 </p>
-                <ul>
+                <ul class="about-list">
                     <li>Experienced and Skilled Team</li>
                     <li>Commitment to Quality and Safety</li>
                     <li>Customer-Centric Approach</li>
@@ -161,49 +168,39 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- AOS Animation Script -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- Responsive Navigation Script -->
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
     <!-- Lazy Loading Images Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll('img[data-src]');
-            const loadImage = function(image) {
+            const loadImage = function (image) {
                 image.setAttribute('src', image.getAttribute('data-src'));
-                image.onload = function() {
+                image.onload = function () {
                     image.removeAttribute('data-src');
                 };
             };
             if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
+                const observer = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
                             loadImage(entry.target);
                             observer.unobserve(entry.target);
                         }
                     });
                 });
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     observer.observe(image);
                 });
             } else {
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     loadImage(image);
                 });
             }
         });
     </script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -32,11 +32,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- AOS Animation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></div>
+
     <!-- Header -->
     <header>
         <div class="logo">
@@ -57,7 +64,7 @@
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image: url('wallpaper\ installing.jpg');" data-aos="fade-down">
+    <section class="page-banner" style="background-image: url('wallpaper-installing.jpg');">
         <div class="banner-content">
             <h1>Wallpaper Removal and Fixing Services</h1>
             <p>Transform Your Space with Professional Wallpaper Solutions</p>
@@ -66,7 +73,7 @@
 
     <!-- Main Content -->
     <main>
-        <section class="service-details" data-aos="fade-up">
+        <section class="service-details">
             <div class="container">
                 <h2>Expert Wallpaper Installation and Removal in Dubai</h2>
                 <p>
@@ -82,7 +89,7 @@
                 <p>
                     More options mean more confusion. Here are some things we consider when beginning a wallpaper project:
                 </p>
-                <ul>
+                <ul class="about-list">
                     <li>Best techniques for removing existing wallpaper</li>
                     <li>Preparing walls after wallpaper removal</li>
                     <li>Process for hanging new wallpaper</li>
@@ -124,7 +131,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -144,49 +151,38 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- AOS Animation Script -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- Responsive Navigation Script -->
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
     <!-- Lazy Loading Images Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll('img[data-src]');
-            const loadImage = function(image) {
+            const loadImage = function (image) {
                 image.setAttribute('src', image.getAttribute('data-src'));
-                image.onload = function() {
+                image.onload = function () {
                     image.removeAttribute('data-src');
                 };
             };
             if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
                             loadImage(entry.target);
                             observer.unobserve(entry.target);
                         }
                     });
                 });
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     observer.observe(image);
                 });
             } else {
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     loadImage(image);
                 });
             }
         });
     </script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>

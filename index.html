@@ -11,31 +11,55 @@
         content="Technical Services, Building Maintenance Dubai, Cleaning Services UAE, AC Repair Dubai, Plumbing Services UAE">
     <meta name="author" content="Syed Rizvi Technical Services L.L.C">
     <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Building Maintenance Solutions - Syed Rizvi Technical Services">
     <meta property="og:description"
         content="Comprehensive building maintenance and technical services for residential and commercial clients in Dubai.">
     <meta property="og:image" content="background.jpg">
     <meta property="og:url" content="https://srtechnical.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building Maintenance Solutions | Syed Rizvi Technical Services">
+    <meta name="twitter:description"
+        content="Syed Rizvi Technical Services L.L.C provides high-quality maintenance and technical services in Dubai.">
+    <meta name="twitter:image" content="background.jpg">
+
     <title>Building Maintenance Solutions | Syed Rizvi Technical Services</title>
+
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- AOS Animation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin (for smooth scrolling) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></div>
+
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="Syed Rizvi Logo" title="Syed Rizvi Technical Services Logo">
+            <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo" title="Syed Rizvi Technical Services L.L.C">
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -46,16 +70,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" data-aos="fade-up">
+    <section class="hero">
         <div class="hero-content">
             <h1>Building Maintenance Solutions for a Brighter Future</h1>
             <p>Providing exclusive maintenance and technical services across the UAE. Your trusted partner for
                 sustainable building solutions.</p>
+            <a href="services.html" class="btn">Explore Our Services</a>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section class="about-us" data-aos="fade-up">
+    <section class="about-us">
         <h2>About Us</h2>
         <p>Welcome to Syed Rizvi Technical Services L.L.C, your trusted partner for building maintenance and technical
             solutions across the UAE. Established in 2023, we aim to deliver high-quality services while prioritizing
@@ -66,13 +91,8 @@
         <a href="about.html" class="btn">Learn More About Us</a>
     </section>
 
-    <!-- Explore Our Services Button -->
-    <div class="explore-services">
-        <a href="services.html" class="btn">Explore Our Services</a>
-    </div>
-
     <!-- Services Overview -->
-    <section class="services-overview" data-aos="fade-right">
+    <section class="services-overview">
         <h2>Our Expert Services</h2>
         <div class="service-grid">
             <!-- Service Cards -->
@@ -125,7 +145,7 @@
                 <a href="cleaning.html" class="btn">Learn More</a>
             </div>
             <div class="service-item">
-                <img data-src="rope access.jpg" alt="Rope Access Services">
+                <img data-src="rope-access.jpg" alt="Rope Access Services">
                 <h3>Rope Access</h3>
                 <p>Safe and efficient rope access services for high-rise building maintenance.</p>
                 <a href="rope-access.html" class="btn">Learn More</a>
@@ -134,7 +154,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" data-aos="fade-up">
+    <section class="projects">
         <h2>Our Recent Projects</h2>
         <div class="project-grid">
             <!-- Project Cards -->
@@ -142,31 +162,27 @@
                 <img data-src="project1.jpg" alt="Residential Villa Renovation">
                 <h3>Residential Villa Renovation</h3>
                 <p>Complete makeover of a luxury villa, including interior design and landscaping.</p>
-              
             </div>
             <div class="project-item">
                 <img data-src="project2.jpg" alt="Corporate Office Fit-Out">
                 <h3>Corporate Office Fit-Out</h3>
                 <p>Modern office space transformation with ergonomic design and partitioning.</p>
-               
             </div>
             <div class="project-item">
                 <img data-src="project3.jpg" alt="Retail Store Setup">
                 <h3>Retail Store Setup</h3>
-                <p>End-to-end setup of a retail outlet, including shelving and lighting solutions.</p><br>
-                
+                <p>End-to-end setup of a retail outlet, including shelving and lighting solutions.</p>
             </div>
             <div class="project-item">
                 <img data-src="project4.jpg" alt="Hotel Lobby Renovation">
                 <h3>Hotel Lobby Renovation</h3>
-                <p>Elegant redesign of a hotel's lobby area to enhance guest experience.</p><br>
-             
+                <p>Elegant redesign of a hotel's lobby area to enhance guest experience.</p>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why-choose-us" data-aos="fade-up">
+    <section class="why-choose-us">
         <h2>Why Choose Us?</h2>
         <div class="reasons-grid">
             <div class="reason">
@@ -197,7 +213,7 @@
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -219,13 +235,6 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- AOS Animation Script -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- Custom Animations Script -->
-    <script src="animations.js"></script>
     <!-- Lazy Loading Images Script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -255,6 +264,10 @@
             }
         });
     </script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>

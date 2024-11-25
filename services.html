@@ -5,8 +5,10 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <title>Our Services | Syed Rizvi Technical Services L.L.C</title>
-    <meta name="description" content="Explore the range of services offered by Syed Rizvi Technical Services L.L.C. From AC repair to interior work, we provide comprehensive maintenance solutions in Dubai.">
-    <meta name="keywords" content="Technical Services Dubai, Building Maintenance, AC Repair, Plumbing Services, Carpentry Work, Interior Design">
+    <meta name="description"
+        content="Explore the range of services offered by Syed Rizvi Technical Services L.L.C. From AC repair to interior work, we provide comprehensive maintenance solutions in Dubai.">
+    <meta name="keywords"
+        content="Technical Services Dubai, Building Maintenance, AC Repair, Plumbing Services, Carpentry Work, Interior Design">
     <meta name="author" content="Syed Rizvi Technical Services L.L.C">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +22,8 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Our Services | Syed Rizvi Technical Services L.L.C">
-    <meta name="twitter:description" content="Explore the range of services offered by Syed Rizvi Technical Services L.L.C in Dubai.">
+    <meta name="twitter:description"
+        content="Explore the range of services offered by Syed Rizvi Technical Services L.L.C in Dubai.">
     <meta name="twitter:image" content="services-banner.jpg">
 
     <!-- Favicon -->
@@ -30,17 +33,26 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- AOS Animation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <!-- ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
 </head>
 
 <body>
+    <!-- Scroll to Top Button -->
+    <div id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></div>
+
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo" title="Syed Rizvi Technical Services L.L.C">
+            <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo"
+                title="Syed Rizvi Technical Services L.L.C">
         </div>
         <nav>
             <div class="menu-icon" id="menu-icon">
@@ -57,7 +69,7 @@
     </header>
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image: url('service.jpg');" data-aos="fade-down">
+    <section class="page-banner" style="background-image: url('service.jpg');">
         <div class="banner-content">
             <h1>Our Services</h1>
             <p>Comprehensive Maintenance and Technical Solutions</p>
@@ -66,17 +78,20 @@
 
     <!-- Main Content -->
     <main>
-        <section class="services-intro" data-aos="fade-up">
+        <section class="services-intro">
             <div class="container">
                 <h2>Quality Services Tailored to Your Needs</h2>
                 <p>
-                    At <strong>Syed Rizvi Technical Services L.L.C</strong>, we offer a wide range of maintenance and technical services designed to meet the unique needs of our clients. Our experienced team is dedicated to delivering high-quality solutions that ensure the longevity and efficiency of your residential or commercial property.
+                    At <strong>Syed Rizvi Technical Services L.L.C</strong>, we offer a wide range of maintenance
+                    and technical services designed to meet the unique needs of our clients. Our experienced team is
+                    dedicated to delivering high-quality solutions that ensure the longevity and efficiency of your
+                    residential or commercial property.
                 </p>
             </div>
         </section>
 
         <!-- Services Overview -->
-        <section class="services-overview" data-aos="fade-up">
+        <section class="services-overview">
             <div class="container">
                 <h2>Our Expert Services</h2>
                 <div class="service-grid">
@@ -147,7 +162,8 @@
         <div class="footer-container">
             <div class="footer-about">
                 <img src="logo-footer.png" alt="Syed Rizvi Logo Footer">
-                <p>Syed Rizvi Technical Services L.L.C - Your trusted partner for building maintenance and technical services across the UAE.</p>
+                <p>Syed Rizvi Technical Services L.L.C - Your trusted partner for building maintenance and technical
+                    services across the UAE.</p>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
@@ -164,9 +180,9 @@
                 <p><strong>Phone:</strong> +971 52 1483314</p>
                 <p><strong>Email:</strong> contact@syedrizvi.com</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a> 
-                    <a href="#"><i class="fab fa-twitter"></i></a> 
-                    <a href="#"><i class="fab fa-instagram"></i></a> 
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -174,49 +190,38 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- AOS Animation Script -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- Responsive Navigation Script -->
-    <script>
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
     <!-- Lazy Loading Images Script -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll('img[data-src]');
-            const loadImage = function(image) {
+            const loadImage = function (image) {
                 image.setAttribute('src', image.getAttribute('data-src'));
-                image.onload = function() {
+                image.onload = function () {
                     image.removeAttribute('data-src');
                 };
             };
             if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
                             loadImage(entry.target);
                             observer.unobserve(entry.target);
                         }
                     });
                 });
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     observer.observe(image);
                 });
             } else {
-                images.forEach(function(image) {
+                images.forEach(function (image) {
                     loadImage(image);
                 });
             }
         });
     </script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
