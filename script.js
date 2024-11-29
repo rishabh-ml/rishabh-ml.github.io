@@ -74,4 +74,40 @@ document.addEventListener('DOMContentLoaded', () => {
             loadImg(img);
         });
     }
+
+    // Web3Forms Form Submission Handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Form data
+            const formData = new FormData(contactForm);
+
+            // AJAX request
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Your message has been sent successfully!');
+                    contactForm.reset();
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert('Please fill out all required fields correctly.');
+                        } else {
+                            alert('Oops! There was a problem submitting your form.');
+                        }
+                    });
+                }
+            }).catch(error => {
+                alert('Oops! There was a problem submitting your form.');
+                console.error('Web3Forms Error:', error);
+            });
+        });
+    }
 });

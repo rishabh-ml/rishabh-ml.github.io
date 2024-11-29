@@ -81,26 +81,27 @@
                 </p>
 
                 <!-- Contact Form -->
-                <form action="contact-form-handler.php" method="POST" class="contact-form">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Add your Access Key -->
+                    <input type="hidden" name="access_key" value="93f662d9-0737-4850-b03c-604d725678b5">
+                    <!-- Redirect URL after successful submission (optional) -->
+                    <input type="hidden" name="redirect" value="https://srtechnicals.com/thank-you.html">
                     <div class="form-group">
-                        <label for="name">Full Name<span>*</span></label>
+                        <label for="name">Name<span>*</span></label>
                         <input type="text" id="name" name="name" required placeholder="Your Full Name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address<span>*</span></label>
+                        <label for="email">Email<span>*</span></label>
                         <input type="email" id="email" name="email" required placeholder="Your Email Address">
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone Number<span>*</span></label>
-                        <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+                        <label for="message">Message<span>*</span></label>
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Your Message<span>*</span></label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
+                    <!-- Honeypot field to prevent spam (hidden from users) -->
+                    <input type="checkbox" name="botcheck" id="botcheck" style="display:none;">
+                    <button type="submit">Send Message</button>
                 </form>
-
                 <!-- Contact Information -->
                 <div class="contact-info">
                     <h3>Our Office</h3>

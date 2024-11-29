@@ -974,3 +974,93 @@ footer p {
     margin: 10px 0;
   }
 }
+
+/* Contact Details Section */
+.contact-details {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+.contact-details .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form label span {
+    color: red;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #87CEEB;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #87CEEB;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00BFFF;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-details h2 {
+        font-size: 2rem;
+    }
+}
+
+header .logo img {
+    height: 100px; /* Adjust the height as needed */
+    width: auto;  /* Maintains aspect ratio */
+}
+
+.footer-about img {
+    height: 100px; /* Adjust the height as needed */
+    width: auto;  /* Maintains aspect ratio */
+    margin-bottom: 15px;
+}
+
+
