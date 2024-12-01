@@ -3,9 +3,9 @@
 $page_title = "Carpentry Services";
 $meta_description = "Professional carpentry services by Syed Rizvi Technical Services L.L.C in Dubai. Custom woodworking solutions for your home and business.";
 $meta_keywords = "Carpentry Services Dubai, Custom Furniture, Woodworking, Cabinet Installation, Technical Services Dubai, Building Maintenance";
-$og_image = "carpentry-banner.jpg";
-$og_url = "https://srtechnical.com/carpentry.php";
-$twitter_image = "carpentry-banner.jpg";
+$og_image = "carpentry-banner.svg";
+$og_url = "https://srtechnicals.com/carpentry.php";
+$twitter_image = "carpentry-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('carpentry-banner.jpg');">
+<section class="page-banner carpentry-banner">
     <div class="banner-content">
         <h1>Carpentry Services</h1>
         <p>Crafting Excellence in Woodwork</p>
@@ -60,24 +60,24 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="tiling.jpg" alt="Tiling Services">
-                <h3>Tiling and Flooring</h3>
+                <img src="tiling.svg" alt="Tiling and Flooring Services">
+                <h3>Tiling and Flooring Services</h3>
                 <p>Professional tiling and flooring solutions to enhance your space.</p>
                 <a href="tiling.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="wallpaper.jpg" alt="Wallpaper Installation">
-                <h3>Wallpaper Installation</h3>
-                <p>Expert wallpaper installation services to add style to your interiors.</p>
-                <a href="wallpaper.php" class="btn">Learn More</a>
+                <img src="partition-work.svg" alt="Partition Work Services">
+                <h3>Partition Work Services</h3>
+                <p>Customized partition solutions to optimize your space.</p>
+                <a href="partition-work.php" class="btn">Learn More</a>
             </div>
             <!-- Add more related services as needed -->
         </div>

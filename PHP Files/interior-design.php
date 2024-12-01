@@ -3,9 +3,9 @@
 $page_title = "Interior Design Services";
 $meta_description = "Professional interior design services by Syed Rizvi Technical Services L.L.C in Dubai. Create your dream space with our expert designers.";
 $meta_keywords = "Interior Design Dubai, Home Decor, Office Design, Space Planning, Technical Services Dubai, Building Maintenance";
-$og_image = "interior-design-banner.jpg";
-$og_url = "https://srtechnical.com/interior-design.php";
-$twitter_image = "interior-design-banner.jpg";
+$og_image = "interior-design-banner.svg";
+$og_url = "https://srtechnicals.com/interior-design.php";
+$twitter_image = "interior-design-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('interior-design-banner.jpg');">
+<section class="page-banner interior-design-banner">
     <div class="banner-content">
         <h1>Interior Design Services</h1>
         <p>Crafting Spaces That Inspire</p>
@@ -60,24 +60,24 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="carpentry.jpg" alt="Carpentry Services">
+                <img src="carpentry.svg" alt="Carpentry Services">
                 <h3>Carpentry Services</h3>
                 <p>Custom woodworking solutions to complement your interiors.</p>
                 <a href="carpentry.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="painting.jpg" alt="Painting Services">
-                <h3>Painting Services</h3>
-                <p>Professional painting services to add color and vibrancy to your space.</p>
-                <a href="painting.php" class="btn">Learn More</a>
+                <img src="cleaning.svg" alt="Cleaning Services">
+                <h3>Cleaning Services</h3>
+                <p>Professional cleaning services for a spotless environment.</p>
+                <a href="cleaning.php" class="btn">Learn More</a>
             </div>
             <!-- Add more related services as needed -->
         </div>

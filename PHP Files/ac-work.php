@@ -3,9 +3,9 @@
 $page_title = "AC Repair and Maintenance";
 $meta_description = "Professional AC repair and maintenance services by Syed Rizvi Technical Services L.L.C in Dubai. Keep your environment comfortable.";
 $meta_keywords = "AC Repair Dubai, Air Conditioning Maintenance, HVAC Services, Technical Services Dubai, Building Maintenance";
-$og_image = "ac-repair-banner.jpg";
-$og_url = "https://srtechnical.com/ac-work.php";
-$twitter_image = "ac-repair-banner.jpg";
+$og_image = "ac-repair-banner.svg";
+$og_url = "https://srtechnicals.com/ac-work.php";
+$twitter_image = "ac-repair-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('ac-repair-banner.jpg');">
+<section class="page-banner ac-repair-banner">
     <div class="banner-content">
         <h1>AC Repair and Maintenance</h1>
         <p>Ensuring Your Comfort All Year Round</p>
@@ -60,24 +60,24 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="plumbing.jpg" alt="Plumbing Services">
+                <img src="plumbing.svg" alt="Plumbing Services">
                 <h3>Plumbing Services</h3>
                 <p>Professional plumbing solutions for your home and business.</p>
                 <a href="plumbing.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="electrical.jpg" alt="Electrical Services">
-                <h3>Electrical Services</h3>
-                <p>Expert electrical installations and repairs by certified electricians.</p>
-                <a href="electrical.php" class="btn">Learn More</a>
+                <img src="tiling.svg" alt="Tiling and Flooring Services">
+                <h3>Tiling and Flooring Services</h3>
+                <p>Enhance your space with our expert tiling and flooring solutions.</p>
+                <a href="tiling.php" class="btn">Learn More</a>
             </div>
             <!-- Add more related services as needed -->
         </div>

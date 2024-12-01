@@ -3,9 +3,9 @@
 $page_title = "About Us";
 $meta_description = "Learn more about Syed Rizvi Technical Services L.L.C, our mission, vision, and the team dedicated to providing top-notch technical services.";
 $meta_keywords = "About Us, Technical Services, Dubai, Building Maintenance, Team, Mission, Vision";
-$og_image = "about-banner.jpg";
-$og_url = "https://srtechnical.com/about.php";
-$twitter_image = "about-banner.jpg";
+$og_image = "about-banner.svg";
+$og_url = "https://srtechnicals.com/about.php";
+$twitter_image = "about-banner.svg";
 $active_page = "about";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('about-banner.jpg');">
+<section class="page-banner about-banner">
     <div class="banner-content">
         <h1>About Us</h1>
         <p>Committed to Excellence in Technical Services</p>
@@ -47,12 +47,12 @@ include 'header.php';
         <!--
         <div class="team-grid">
             <div class="team-member">
-                <img data-src="team-member-1.jpg" alt="Team Member 1">
+                <img src="team-member-1.svg" alt="Team Member 1">
                 <h3>John Doe</h3>
                 <p>Operations Manager</p>
             </div>
             <div class="team-member">
-                <img data-src="team-member-2.jpg" alt="Team Member 2">
+                <img src="team-member-2.svg" alt="Team Member 2">
                 <h3>Jane Smith</h3>
                 <p>Senior Engineer</p>
             </div>

@@ -3,9 +3,9 @@
 $page_title = "Plumbing Services";
 $meta_description = "Professional plumbing services by Syed Rizvi Technical Services L.L.C in Dubai. Reliable solutions for all your plumbing needs.";
 $meta_keywords = "Plumbing Services Dubai, Leak Repair, Pipe Installation, Drain Cleaning, Technical Services Dubai, Building Maintenance";
-$og_image = "plumbing-banner.jpg";
-$og_url = "https://srtechnical.com/plumbing.php";
-$twitter_image = "plumbing-banner.jpg";
+$og_image = "plumbing-banner.svg";
+$og_url = "https://srtechnicals.com/plumbing.php";
+$twitter_image = "plumbing-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('plumbing-banner.jpg');">
+<section class="page-banner plumbing-banner">
     <div class="banner-content">
         <h1>Plumbing Services</h1>
         <p>Reliable Solutions for Your Plumbing Needs</p>
@@ -67,14 +67,14 @@ include 'header.php';
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="ac-repair.jpg" alt="AC Repair Services">
+                <img src="ac-repair.svg" alt="AC Repair Services">
                 <h3>AC Repair and Maintenance</h3>
                 <p>Expert air conditioning repair services to keep you cool.</p>
                 <a href="ac-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="electrical.jpg" alt="Electrical Services">
+                <img src="electrical.svg" alt="Electrical Services">
                 <h3>Electrical Services</h3>
                 <p>Professional electrical installations and repairs.</p>
                 <a href="electrical.php" class="btn">Learn More</a>

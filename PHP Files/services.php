@@ -1,11 +1,11 @@
 <?php
 // Page-specific variables
 $page_title = "Services";
-$meta_description = "Explore the range of services offered by Syed Rizvi Technical Services L.L.C, including AC repair, plumbing, cleaning, and more.";
-$meta_keywords = "Services, AC Repair, Plumbing, Cleaning, Carpentry, Technical Services Dubai, Building Maintenance";
-$og_image = "services-banner.jpg";
-$og_url = "https://srtechnical.com/services.php";
-$twitter_image = "services-banner.jpg";
+$meta_description = "Explore the range of services offered by Syed Rizvi Technical Services L.L.C, including AC repair, plumbing, carpentry, and more.";
+$meta_keywords = "Services, AC Repair, Plumbing, Carpentry, Technical Services Dubai, Building Maintenance";
+$og_image = "services-banner.svg";
+$og_url = "https://srtechnicals.com/services.php";
+$twitter_image = "services-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('services-banner.jpg');">
+<section class="page-banner services-banner">
     <div class="banner-content">
         <h1>Our Services</h1>
         <p>Comprehensive Solutions Tailored to Your Needs</p>
@@ -31,66 +31,66 @@ include 'header.php';
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="ac-repair.jpg" alt="AC Repair Services">
-                <h3>AC Repair</h3>
+                <img src="ac-repair.svg" alt="AC Repair and Maintenance">
+                <h3>AC Repair and Maintenance</h3>
                 <p>Reliable air conditioning repair services for residential and commercial sectors.</p>
                 <a href="ac-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="plumbing.jpg" alt="Plumbing Services">
+                <img src="plumbing.svg" alt="Plumbing Services">
                 <h3>Plumbing Services</h3>
                 <p>Professional plumbing solutions to fix leaks, clogs, and other issues.</p>
                 <a href="plumbing.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 3 -->
             <div class="service-item">
-                <img data-src="false-ceiling.jpg" alt="False Ceiling">
-                <h3>False Ceiling</h3>
-                <p>Enhance your interiors with custom-designed false ceilings.</p>
-                <a href="false-ceiling.html" class="btn">Learn More</a>
+                <img src="carpentry.svg" alt="Carpentry Services">
+                <h3>Carpentry Services</h3>
+                <p>Custom woodworking solutions for your home and business.</p>
+                <a href="carpentry.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 4 -->
             <div class="service-item">
-                <img data-src="tiling.jpg" alt="Wall and Floor Tiling">
-                <h3>Wall & Floor Tiling</h3>
-                <p>High-quality tiling solutions for residential and commercial spaces.</p>
-                <a href="tiling.html" class="btn">Learn More</a>
+                <img src="tiling.svg" alt="Tiling and Flooring Services">
+                <h3>Tiling and Flooring Services</h3>
+                <p>Professional tiling and flooring solutions to enhance your space.</p>
+                <a href="tiling.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 5 -->
             <div class="service-item">
-                <img data-src="carpentry.jpg" alt="Carpentry Services">
-                <h3>Carpentry Work</h3>
-                <p>Expert carpentry services for custom furniture and woodwork.</p>
-                <a href="carpentry.html" class="btn">Learn More</a>
+                <img src="false-ceiling.svg" alt="False Ceiling Services">
+                <h3>False Ceiling Services</h3>
+                <p>Enhance your interiors with stylish ceiling solutions.</p>
+                <a href="false-ceiling.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 6 -->
             <div class="service-item">
-                <img data-src="interior.jpg" alt="Interior Work">
-                <h3>Interior Work</h3>
-                <p>Transform your space with our professional interior design services.</p>
-                <a href="interior.html" class="btn">Learn More</a>
+                <img src="partition-work.svg" alt="Partition Work Services">
+                <h3>Partition Work Services</h3>
+                <p>Customized partition solutions to optimize your space.</p>
+                <a href="partition-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 7 -->
             <div class="service-item">
-                <img data-src="partitioning.jpg" alt="Partition Services">
-                <h3>Partition Work</h3>
-                <p>Modern office and residential partition solutions to optimize your space.</p>
-                <a href="partition.html" class="btn">Learn More</a>
+                <img src="interior-design.svg" alt="Interior Design Services">
+                <h3>Interior Design Services</h3>
+                <p>Comprehensive interior design solutions to create your dream space.</p>
+                <a href="interior-design.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 8 -->
             <div class="service-item">
-                <img data-src="cleaning.jpg" alt="Cleaning Services">
+                <img src="cleaning.svg" alt="Cleaning Services">
                 <h3>Cleaning Services</h3>
-                <p>Comprehensive cleaning services for a spotless and hygienic environment.</p>
+                <p>Professional cleaning services for a spotless environment.</p>
                 <a href="cleaning.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 9 -->
             <div class="service-item">
-                <img data-src="rope-access.jpg" alt="Rope Access Services">
-                <h3>Rope Access</h3>
-                <p>Safe and efficient rope access services for high-rise building maintenance.</p>
-                <a href="rope-access.html" class="btn">Learn More</a>
+                <img src="rope-access.svg" alt="Rope Access Services">
+                <h3>Rope Access Services</h3>
+                <p>Safe and efficient solutions for high-rise building maintenance.</p>
+                <a href="rope-access.php" class="btn">Learn More</a>
             </div>
             <!-- Add more services as needed -->
         </div>

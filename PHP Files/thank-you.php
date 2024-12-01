@@ -2,9 +2,9 @@
 $page_title = "Thank You";
 $meta_description = "Thank you for contacting Syed Rizvi Technical Services L.L.C. We will get back to you soon.";
 $meta_keywords = "Thank You, Contact, Technical Services Dubai";
-$og_image = "thank-you-banner.jpg";
-$og_url = "https://srtechnical.com/thank-you.php";
-$twitter_image = "thank-you-banner.jpg";
+$og_image = "thank-you-banner.svg";
+$og_url = "https://srtechnicals.com/thank-you.php";
+$twitter_image = "thank-you-banner.svg";
 $active_page = "";
 
 include 'header.php';

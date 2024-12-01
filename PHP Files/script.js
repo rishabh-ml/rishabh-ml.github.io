@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
        Sticky Header and Scroll Events
     ================================ */
     const header = document.querySelector('header');
-    const scrollTopBtn = document.createElement('div');
+    const scrollTopBtn = document.getElementById('scrollToTopBtn');
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelectorAll('nav ul li a');
     const scrollRevealElements = document.querySelectorAll('.reveal');
@@ -41,10 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     /* =============================
        Scroll to Top Button
     ================================ */
-    scrollTopBtn.classList.add('scroll-top');
-    scrollTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
-    document.body.appendChild(scrollTopBtn);
-
     scrollTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -155,10 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (valid) {
-                // Submit the form via AJAX or any desired method
-                // For demonstration, we'll just reset the form
-                contactForm.reset();
-                alert('Thank you for contacting us! We will get back to you soon.');
+                // Submit the form
+                contactForm.submit();
             }
         });
 

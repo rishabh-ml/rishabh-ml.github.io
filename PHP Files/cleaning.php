@@ -3,9 +3,9 @@
 $page_title = "Cleaning Services";
 $meta_description = "Professional cleaning services by Syed Rizvi Technical Services L.L.C in Dubai. Ensure a spotless and hygienic environment.";
 $meta_keywords = "Cleaning Services Dubai, Office Cleaning, Home Cleaning, Deep Cleaning, Technical Services Dubai, Building Maintenance";
-$og_image = "cleaning-banner.jpg";
-$og_url = "https://srtechnical.com/cleaning.php";
-$twitter_image = "cleaning-banner.jpg";
+$og_image = "cleaning-banner.svg";
+$og_url = "https://srtechnicals.com/cleaning.php";
+$twitter_image = "cleaning-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('cleaning-banner.jpg');">
+<section class="page-banner cleaning-banner">
     <div class="banner-content">
         <h1>Cleaning Services</h1>
         <p>Keeping Your Space Spotless and Hygienic</p>
@@ -60,21 +60,21 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="ac-repair.jpg" alt="AC Repair Services">
+                <img src="ac-repair.svg" alt="AC Repair Services">
                 <h3>AC Repair and Maintenance</h3>
                 <p>Expert air conditioning repair services to keep you cool.</p>
                 <a href="ac-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="plumbing.jpg" alt="Plumbing Services">
+                <img src="plumbing.svg" alt="Plumbing Services">
                 <h3>Plumbing Services</h3>
                 <p>Professional plumbing solutions for your home and business.</p>
                 <a href="plumbing.php" class="btn">Learn More</a>

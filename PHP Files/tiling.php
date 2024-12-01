@@ -3,9 +3,9 @@
 $page_title = "Tiling and Flooring Services";
 $meta_description = "Professional tiling and flooring services by Syed Rizvi Technical Services L.L.C in Dubai. Enhance your space with quality craftsmanship.";
 $meta_keywords = "Tiling Services Dubai, Flooring Installation, Ceramic Tiles, Marble Flooring, Technical Services Dubai, Building Maintenance";
-$og_image = "tiling-banner.jpg";
-$og_url = "https://srtechnical.com/tiling.php";
-$twitter_image = "tiling-banner.jpg";
+$og_image = "tiling-banner.svg";
+$og_url = "https://srtechnicals.com/tiling.php";
+$twitter_image = "tiling-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('tiling-banner.jpg');">
+<section class="page-banner tiling-banner">
     <div class="banner-content">
         <h1>Tiling and Flooring Services</h1>
         <p>Enhancing Spaces with Quality Craftsmanship</p>
@@ -60,24 +60,24 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="carpentry.jpg" alt="Carpentry Services">
+                <img src="carpentry.svg" alt="Carpentry Services">
                 <h3>Carpentry Services</h3>
                 <p>Custom woodworking solutions for your home and business.</p>
                 <a href="carpentry.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="painting.jpg" alt="Painting Services">
-                <h3>Painting Services</h3>
-                <p>Professional painting services to refresh your interiors and exteriors.</p>
-                <a href="painting.php" class="btn">Learn More</a>
+                <img src="false-ceiling.svg" alt="False Ceiling Services">
+                <h3>False Ceiling Services</h3>
+                <p>Enhance your interiors with stylish ceiling solutions.</p>
+                <a href="false-ceiling.php" class="btn">Learn More</a>
             </div>
             <!-- Add more related services as needed -->
         </div>

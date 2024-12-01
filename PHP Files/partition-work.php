@@ -3,9 +3,9 @@
 $page_title = "Partition Work Services";
 $meta_description = "Professional partition work services by Syed Rizvi Technical Services L.L.C in Dubai. Optimize your space with customized partition solutions.";
 $meta_keywords = "Partition Work Dubai, Office Partitions, Glass Partitions, Technical Services Dubai, Building Maintenance";
-$og_image = "partition-work-banner.jpg";
-$og_url = "https://srtechnical.com/partition-work.php";
-$twitter_image = "partition-work-banner.jpg";
+$og_image = "partition-work-banner.svg";
+$og_url = "https://srtechnicals.com/partition-work.php";
+$twitter_image = "partition-work-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('partition-work-banner.jpg');">
+<section class="page-banner partition-work-banner">
     <div class="banner-content">
         <h1>Partition Work Services</h1>
         <p>Optimizing Spaces with Customized Solutions</p>
@@ -60,21 +60,21 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="false-ceiling.jpg" alt="False Ceiling Services">
+                <img src="false-ceiling.svg" alt="False Ceiling Services">
                 <h3>False Ceiling Services</h3>
                 <p>Enhance your interiors with stylish ceiling solutions.</p>
                 <a href="false-ceiling.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="interior-design.jpg" alt="Interior Design Services">
+                <img src="interior-design.svg" alt="Interior Design Services">
                 <h3>Interior Design Services</h3>
                 <p>Comprehensive interior design solutions to create your dream space.</p>
                 <a href="interior-design.php" class="btn">Learn More</a>

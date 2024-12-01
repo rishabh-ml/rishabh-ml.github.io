@@ -3,9 +3,9 @@
 $page_title = "False Ceiling Services";
 $meta_description = "Professional false ceiling installation services by Syed Rizvi Technical Services L.L.C in Dubai. Enhance your interiors with stylish ceiling solutions.";
 $meta_keywords = "False Ceiling Dubai, Ceiling Installation, Gypsum Ceiling, Technical Services Dubai, Building Maintenance";
-$og_image = "false-ceiling-banner.jpg";
-$og_url = "https://srtechnical.com/false-ceiling.php";
-$twitter_image = "false-ceiling-banner.jpg";
+$og_image = "false-ceiling-banner.svg";
+$og_url = "https://srtechnicals.com/false-ceiling.php";
+$twitter_image = "false-ceiling-banner.svg";
 $active_page = "services";
 
 // Include the header
@@ -13,7 +13,7 @@ include 'header.php';
 ?>
 
 <!-- Page Banner -->
-<section class="page-banner" style="background-image: url('false-ceiling-banner.jpg');">
+<section class="page-banner false-ceiling-banner">
     <div class="banner-content">
         <h1>False Ceiling Services</h1>
         <p>Elevate Your Space with Stylish Ceilings</p>
@@ -60,21 +60,21 @@ include 'header.php';
     </div>
 </section>
 
-<!-- Related Services (Optional) -->
+<!-- Related Services -->
 <section class="related-services">
     <div class="container">
         <h2>Related Services</h2>
         <div class="service-list">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="partition-work.jpg" alt="Partition Work Services">
-                <h3>Partition Work</h3>
+                <img src="partition-work.svg" alt="Partition Work Services">
+                <h3>Partition Work Services</h3>
                 <p>Customized partition solutions to optimize your space.</p>
                 <a href="partition-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="interior-design.jpg" alt="Interior Design Services">
+                <img src="interior-design.svg" alt="Interior Design Services">
                 <h3>Interior Design Services</h3>
                 <p>Comprehensive interior design solutions to create your dream space.</p>
                 <a href="interior-design.php" class="btn">Learn More</a>

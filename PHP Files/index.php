@@ -3,9 +3,9 @@
 $page_title = "Home";
 $meta_description = "Syed Rizvi Technical Services L.L.C provides expert building maintenance and technical services in Dubai. Discover our services and projects.";
 $meta_keywords = "Technical Services Dubai, Building Maintenance, AC Repair, Plumbing Services, Carpentry Work, Interior Design, Burj Khalifa, Ferrari World";
-$og_image = "og-image.jpg";
-$og_url = "https://srtechnical.com/index.php";
-$twitter_image = "twitter-image.jpg";
+$og_image = "og-image.svg";
+$og_url = "https://srtechnicals.com/index.php";
+$twitter_image = "twitter-image.svg";
 $active_page = "home";
 
 // Include the header
@@ -37,66 +37,24 @@ include 'header.php';
         <div class="service-grid">
             <!-- Service Item 1 -->
             <div class="service-item">
-                <img data-src="ac-repair.jpg" alt="AC Repair Services">
+                <img src="ac-repair.svg" alt="AC Repair Services">
                 <h3>AC Repair</h3>
                 <p>Reliable air conditioning repair services for residential and commercial sectors.</p>
                 <a href="ac-work.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 2 -->
             <div class="service-item">
-                <img data-src="plumbing.jpg" alt="Plumbing Services">
+                <img src="plumbing.svg" alt="Plumbing Services">
                 <h3>Plumbing Services</h3>
                 <p>Professional plumbing solutions to fix leaks, clogs, and other issues.</p>
                 <a href="plumbing.php" class="btn">Learn More</a>
             </div>
             <!-- Service Item 3 -->
             <div class="service-item">
-                <img data-src="false-ceiling.jpg" alt="False Ceiling">
+                <img src="false-ceiling.svg" alt="False Ceiling">
                 <h3>False Ceiling</h3>
                 <p>Enhance your interiors with custom-designed false ceilings.</p>
-                <a href="false-ceiling.html" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 4 -->
-            <div class="service-item">
-                <img data-src="tiling.jpg" alt="Wall and Floor Tiling">
-                <h3>Wall & Floor Tiling</h3>
-                <p>High-quality tiling solutions for residential and commercial spaces.</p>
-                <a href="tiling.html" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 5 -->
-            <div class="service-item">
-                <img data-src="carpentry.jpg" alt="Carpentry Services">
-                <h3>Carpentry Work</h3>
-                <p>Expert carpentry services for custom furniture and woodwork.</p>
-                <a href="carpentry.html" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 6 -->
-            <div class="service-item">
-                <img data-src="interior.jpg" alt="Interior Work">
-                <h3>Interior Work</h3>
-                <p>Transform your space with our professional interior design services.</p>
-                <a href="interior.html" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 7 -->
-            <div class="service-item">
-                <img data-src="partitioning.jpg" alt="Partition Services">
-                <h3>Partition Work</h3>
-                <p>Modern office and residential partition solutions to optimize your space.</p>
-                <a href="partition.html" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 8 -->
-            <div class="service-item">
-                <img data-src="cleaning.jpg" alt="Cleaning Services">
-                <h3>Cleaning Services</h3>
-                <p>Comprehensive cleaning services for a spotless and hygienic environment.</p>
-                <a href="cleaning.php" class="btn">Learn More</a>
-            </div>
-            <!-- Service Item 9 -->
-            <div class="service-item">
-                <img data-src="rope-access.jpg" alt="Rope Access Services">
-                <h3>Rope Access</h3>
-                <p>Safe and efficient rope access services for high-rise building maintenance.</p>
-                <a href="rope-access.html" class="btn">Learn More</a>
+                <a href="false-ceiling.php" class="btn">Learn More</a>
             </div>
             <!-- Add more services as needed -->
         </div>
@@ -116,7 +74,7 @@ include 'header.php';
         <div class="project-grid">
             <!-- Project Item 1 -->
             <div class="project-item">
-                <img data-src="burj-khalifa.jpg" alt="Burj Khalifa">
+                <img src="burj-khalifa.svg" alt="Burj Khalifa">
                 <h3>Burj Khalifa</h3>
                 <p>
                     Worked on the world's tallest building, providing services such as external glass cleaning, electrical wiring, and cladding.
@@ -124,18 +82,10 @@ include 'header.php';
             </div>
             <!-- Project Item 2 -->
             <div class="project-item">
-                <img data-src="ferrari-world.jpg" alt="Ferrari World">
+                <img src="ferrari-world.svg" alt="Ferrari World">
                 <h3>Ferrari World</h3>
                 <p>
                     Contributed to the iconic Ferrari World with glass fixing, silicone installation, and painting services.
-                </p>
-            </div>
-            <!-- Project Item 3 -->
-            <div class="project-item">
-                <img data-src="conrad-hotel.jpg" alt="Conrad Hotel">
-                <h3>Conrad Hotel</h3>
-                <p>
-                    Provided comprehensive technical services including electrical installations and cladding work.
                 </p>
             </div>
             <!-- Add more projects as needed -->
@@ -183,7 +133,6 @@ include 'header.php';
     </div>
     <div class="testimonial-nav"></div>
 </section>
-
 
 <?php
 // Include the footer
