@@ -28,9 +28,15 @@
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles.css">
+    <!-- In header.php -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -42,12 +48,12 @@
         <div class="logo">
             <img src="logo.jpg" alt="Syed Rizvi Technical Services Logo" title="Syed Rizvi Technical Services L.L.C">
         </div>
-        <nav>
+        <nav>            
             <div class="menu-icon" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
             <ul id="nav-links">
-                <li><a href="index.php" class="<?php echo ($active_page == 'home') ? 'active' : ''; ?>">Home</a></li>
+                <li><a href="index.php" class="active" class="<?php echo ($active_page == 'home') ? 'active' : ''; ?>">Home</a></li>
                 <li><a href="about.php" class="<?php echo ($active_page == 'about') ? 'active' : ''; ?>">About Us</a></li>
                 <li><a href="services.php" class="<?php echo ($active_page == 'services') ? 'active' : ''; ?>">Services</a></li>
                 <li><a href="projects.php" class="<?php echo ($active_page == 'projects') ? 'active' : ''; ?>">Projects</a></li>

@@ -35,54 +35,63 @@ include 'header.php';
     <div class="container">
         <h2>Our Services</h2>
         <div class="service-grid">
+            <!-- Service Item 1 -->
             <div class="service-item">
                 <img data-src="ac-repair.jpg" alt="AC Repair Services">
                 <h3>AC Repair</h3>
                 <p>Reliable air conditioning repair services for residential and commercial sectors.</p>
                 <a href="ac-work.php" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 2 -->
             <div class="service-item">
                 <img data-src="plumbing.jpg" alt="Plumbing Services">
                 <h3>Plumbing Services</h3>
                 <p>Professional plumbing solutions to fix leaks, clogs, and other issues.</p>
                 <a href="plumbing.php" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 3 -->
             <div class="service-item">
                 <img data-src="false-ceiling.jpg" alt="False Ceiling">
                 <h3>False Ceiling</h3>
                 <p>Enhance your interiors with custom-designed false ceilings.</p>
                 <a href="false-ceiling.html" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 4 -->
             <div class="service-item">
                 <img data-src="tiling.jpg" alt="Wall and Floor Tiling">
                 <h3>Wall & Floor Tiling</h3>
                 <p>High-quality tiling solutions for residential and commercial spaces.</p>
                 <a href="tiling.html" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 5 -->
             <div class="service-item">
                 <img data-src="carpentry.jpg" alt="Carpentry Services">
                 <h3>Carpentry Work</h3>
                 <p>Expert carpentry services for custom furniture and woodwork.</p>
                 <a href="carpentry.html" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 6 -->
             <div class="service-item">
                 <img data-src="interior.jpg" alt="Interior Work">
                 <h3>Interior Work</h3>
                 <p>Transform your space with our professional interior design services.</p>
                 <a href="interior.html" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 7 -->
             <div class="service-item">
                 <img data-src="partitioning.jpg" alt="Partition Services">
                 <h3>Partition Work</h3>
                 <p>Modern office and residential partition solutions to optimize your space.</p>
                 <a href="partition.html" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 8 -->
             <div class="service-item">
                 <img data-src="cleaning.jpg" alt="Cleaning Services">
                 <h3>Cleaning Services</h3>
                 <p>Comprehensive cleaning services for a spotless and hygienic environment.</p>
                 <a href="cleaning.php" class="btn">Learn More</a>
             </div>
+            <!-- Service Item 9 -->
             <div class="service-item">
                 <img data-src="rope-access.jpg" alt="Rope Access Services">
                 <h3>Rope Access</h3>
@@ -157,6 +166,24 @@ include 'header.php';
         </div>
     </div>
 </section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial active">
+            <p>"Syed Rizvi Technical Services provided exceptional service. Their professionalism is unmatched!"</p>
+            <h3>- John Doe, CEO of XYZ Corp</h3>
+        </div>
+        <div class="testimonial">
+            <p>"The team was efficient and reliable. Highly recommend their services to anyone in need."</p>
+            <h3>- Jane Smith, Homeowner</h3>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </div>
+    <div class="testimonial-nav"></div>
+</section>
+
 
 <?php
 // Include the footer
