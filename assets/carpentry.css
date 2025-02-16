@@ -1,0 +1,62 @@
+.page-banner {
+    background-size: cover;
+    background-position: center;
+    padding:100px 20px;
+    text-align: center;
+    color:#fff;
+}
+
+.page-banner h1 {
+    font-size:3rem;
+    margin-bottom:20px;
+}
+.page-banner p {
+    font-size:1.2rem;
+}
+
+.service-details {
+    padding:50px 20px;
+    background:#fff;
+    max-width:1200px;
+    margin:0 auto;
+    text-align:left;
+}
+
+.service-details h2 {
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:20px;
+}
+.service-details h3 {
+    font-size:1.8rem;
+    color:#0E2841;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+.service-details p {
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+.about-list {
+    list-style:none;
+    padding:0;
+    margin-bottom:20px;
+}
+.about-list li {
+    padding-left:25px;
+    position:relative;
+    margin-bottom:10px;
+}
+.about-list li::before {
+    content:"\f0da";
+    font-family:"Font Awesome 5 Free";
+    font-weight:900;
+    position:absolute;
+    left:0;
+    color:#387fd9;
+}
+
+.service-details .btn {
+    margin-top:20px;
+}

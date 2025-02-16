@@ -1,0 +1,123 @@
+/* services.css */
+
+/* Page Banner */
+.services-banner {
+    background: url('assets/images/services-banner.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.services-banner .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.services-banner .banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Services Intro */
+.services-intro {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+}
+
+.services-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services-intro p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Services Overview */
+.services-overview {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+}
+
+.services-overview h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.service-item .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #87CEEB;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.service-item .btn:hover {
+    background: #00BFFF;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-banner .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

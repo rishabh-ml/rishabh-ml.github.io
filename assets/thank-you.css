@@ -1,0 +1,70 @@
+.page-banner {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+.page-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.page-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.thank-you-section {
+    padding: 50px 20px;
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.thank-you-section h2 {
+    font-size: 2.5rem;
+    color: #0E2841;
+    margin-bottom: 20px;
+}
+.thank-you-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.thank-you-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    .page-banner p {
+        font-size: 1rem;
+    }
+    .thank-you-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
