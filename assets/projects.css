@@ -1,0 +1,112 @@
+.page-banner {
+    background-size:cover;
+    background-position:center;
+    padding:100px 20px;
+    text-align:center;
+    color:#fff;
+}
+.page-banner h1 {
+    font-size:3rem;
+    margin-bottom:20px;
+}
+.page-banner p {
+    font-size:1.2rem;
+}
+
+.projects-intro {
+    padding:50px 20px;
+    background:#fff;
+    text-align:center;
+}
+.projects-intro h2 {
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+.projects-intro p {
+    font-size:1rem;
+    color:#666;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.projects-overview {
+    padding:50px 20px;
+    background:#f8f9fa;
+    text-align:center;
+}
+.projects-overview h2 {
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.project-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    justify-items:center;
+}
+.project-item {
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    width:250px;
+}
+.project-item:hover {
+    transform:translateY(-10px);
+    box-shadow:0 15px 25px rgba(0,0,0,0.3);
+}
+.project-item img {
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    margin-bottom:10px;
+    object-fit:cover;
+}
+.project-item h3 {
+    font-size:1.5rem;
+    margin-bottom:10px;
+    color:#000;
+}
+.project-item p {
+    font-size:1rem;
+    color:#666;
+    margin-bottom:15px;
+}
+
+.cta-section {
+    padding:50px 20px;
+    background-color:#87CEEB;
+    text-align:center;
+    color:#fff;
+}
+.cta-section h2 {
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+.cta-section p {
+    font-size:1rem;
+    margin-bottom:20px;
+    line-height:1.6;
+    color:#fff;
+}
+.cta-section .btn {
+    background-color:#fff;
+    color:#87CEEB;
+}
+.cta-section .btn:hover {
+    background-color:#f8f9fa;
+}
+
+@media (max-width:768px) {
+    .page-banner h1 {
+        font-size:2rem;
+    }
+    .project-item {
+        width:100%;
+        max-width:300px;
+        margin:0 auto;
+    }
+}
